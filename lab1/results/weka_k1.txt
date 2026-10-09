@@ -1,0 +1,62 @@
+COMMAND: "C:\Program Files\MATLAB\R2023b\sys\java\jre\win64\jre\bin\java.exe" -Djava.awt.headless=true -Dweka.packageManager.offline=true -Duser.home=C:\Users\18695\Desktop\NKU-ML\lab1\results\weka_home -cp C:\Users\18695\Desktop\NKU-ML\lab1\tools\weka\bounce-0.18.jar;C:\Users\18695\Desktop\NKU-ML\lab1\tools\weka\java-cup-runtime-11b-20160615.jar;C:\Users\18695\Desktop\NKU-ML\lab1\tools\weka\weka-stable-3.8.6.jar weka.classifiers.lazy.IBk -t C:\Users\18695\Desktop\NKU-ML\lab1\results\semeion_full.arff -c last -x 1593 -s 42 -v -K 1
+
+STDOUT:
+WARNING: core mtj jar files are not available as resources to this classloader (sun.misc.Launcher$AppClassLoader@55f96302)
+
+Options: -K 1 
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.17 seconds
+
+Time taken to perform cross-validation: 4.73 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1460               91.651  %
+Incorrectly Classified Instances       133                8.349  %
+Kappa statistic                          0.9072
+Mean absolute error                      0.0173
+Root mean squared error                  0.1255
+Relative absolute error                  9.6279 %
+Root relative squared error             41.8064 %
+Total Number of Instances             1593     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.003    0.975      0.975    0.975      0.972    0.987     0.956     0
+                 0.969    0.022    0.831      0.969    0.895      0.885    0.977     0.833     1
+                 0.943    0.014    0.882      0.943    0.912      0.902    0.969     0.869     2
+                 0.950    0.017    0.863      0.950    0.904      0.894    0.969     0.834     3
+                 0.913    0.004    0.961      0.913    0.936      0.930    0.961     0.900     4
+                 0.937    0.012    0.898      0.937    0.917      0.908    0.960     0.860     5
+                 0.957    0.009    0.922      0.957    0.939      0.932    0.976     0.886     6
+                 0.918    0.003    0.967      0.918    0.942      0.936    0.972     0.918     7
+                 0.806    0.004    0.954      0.806    0.874      0.865    0.915     0.815     8
+                 0.791    0.004    0.954      0.791    0.865      0.856    0.902     0.788     9
+Weighted Avg.    0.917    0.009    0.920      0.917    0.916      0.908    0.959     0.866     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 157   0   0   0   1   0   2   0   1   0 |   a = 0
+   0 157   1   2   0   1   0   0   0   1 |   b = 1
+   0   2 150   2   1   0   0   2   1   1 |   c = 2
+   0   1   1 151   0   3   0   1   1   1 |   d = 3
+   0  11   1   0 147   0   1   1   0   0 |   e = 4
+   0   1   0   2   1 149   6   0   0   0 |   f = 5
+   2   0   0   0   2   3 154   0   0   0 |   g = 6
+   0  11   1   0   0   0   0 145   0   1 |   h = 7
+   1   2  16   4   0   2   3   0 125   2 |   i = 8
+   1   4   0  14   1   8   1   1   3 125 |   j = 9
+
+
+STDERR:

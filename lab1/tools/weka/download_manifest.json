@@ -1,0 +1,17 @@
+[
+  {
+    "file": "weka-stable-3.8.6.jar",
+    "source": "https://repo.maven.apache.org/maven2/nz/ac/waikato/cms/weka/weka-stable/3.8.6/weka-stable-3.8.6.jar",
+    "sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9"
+  },
+  {
+    "file": "bounce-0.18.jar",
+    "source": "https://repo.maven.apache.org/maven2/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar",
+    "sha256": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca"
+  },
+  {
+    "file": "java-cup-runtime-11b-20160615.jar",
+    "source": "https://repo.maven.apache.org/maven2/com/github/vbmacher/java-cup-runtime/11b-20160615/java-cup-runtime-11b-20160615.jar",
+    "sha256": "5c01edb6a4371f601a1de816f36cd7da47cb8a34ecc99eac5fe7ed660854b559"
+  }
+]

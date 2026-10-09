@@ -1,0 +1,68 @@
+{
+  "train_path": "C:\\Users\\18695\\Desktop\\NKU-ML\\lab1\\瀹為獙1\\瀹為獙鏁版嵁\\semeion_train.txt",
+  "test_path": "C:\\Users\\18695\\Desktop\\NKU-ML\\lab1\\瀹為獙1\\瀹為獙鏁版嵁\\semeion_test.txt",
+  "train_sha256": "083d871d5bb36c34da9e0b2104cbb0cff4ca3978e6b4f785d4e24dd2cdb5909d",
+  "test_sha256": "ca3d9850a12ec16757fe012437033441ebf123ca79400b5c573cff9a94662612",
+  "train_samples": 1293,
+  "test_samples": 300,
+  "full_samples": 1593,
+  "class_counts": [
+    161,
+    162,
+    159,
+    159,
+    161,
+    159,
+    161,
+    158,
+    155,
+    158
+  ],
+  "features": 256,
+  "unique_pixel_rows": 1593,
+  "conflicting_duplicate_groups": [],
+  "train_test_identical_pixel_groups": 0,
+  "distance": "Euclidean (squared for ordering)",
+  "vote": "uniform",
+  "distance_tie_break": "original training row index",
+  "vote_tie_break": "smallest",
+  "seed": 42,
+  "ks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15
+  ],
+  "train_selected_k": 1,
+  "selected_k_test_accuracy": 0.91,
+  "weka": {
+    "1": {
+      "correct": 1460,
+      "accuracy": 0.9165097300690521,
+      "seconds": 5.404662600000165
+    },
+    "3": {
+      "correct": 1437,
+      "accuracy": 0.9020715630885122,
+      "seconds": 5.5779216000000815
+    },
+    "5": {
+      "correct": 1445,
+      "accuracy": 0.9070935342121783,
+      "seconds": 5.217922199999975
+    }
+  },
+  "numpy_version": "2.3.4",
+  "matplotlib_version": "3.10.5",
+  "notes": [
+    "All-data LOO uses the provided train and test rows together as required.",
+    "Fixed test evaluation trains only on the provided training file.",
+    "k is selected by training-only LOO, never by fixed test accuracy.",
+    "Handout example accuracies are not acceptance targets.",
+    "Weka includes all neighbours tied at the kth distance."
+  ]
+}
